@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Salary Management System</h2>
+        
+        <div class="input-group">
+            <input type="text" id="empName" placeholder="Employee Name">
+            <input type="number" id="empID" placeholder="Employee ID">
+            <input type="number" id="empSalary" placeholder="Salary">
+            <input type="text" id="empDept" placeholder="Department">
+            <button onclick="addEmployee()">Add Employee</button>
+        </div>
+
+        <div class="actions">
+            <button onclick="displayEmployees()">Display All</button>
+            <button onclick="filterHighSalary()">Salary > ₹50,000</button>
+            <button onclick="calculateTotalPayout()">Total Payout</button>
+            <button onclick="calculateAverage()">Average Salary</button>
+            <button onclick="countByDepartment()">Count by Dept</button>
+        </div>
+
+        <div id="resultDisplay" class="display-box">
+            <p>Results will appear here...</p>
+        </div>
+    </div>
+    <script src="EXPERIMENT 2.js"></script>
+</body>
+</html>
+
