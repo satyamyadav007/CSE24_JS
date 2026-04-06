@@ -1,4 +1,3 @@
-// Selecting elements using DOM 
 const heading = document.getElementById('mainHeading');
 const input = document.getElementById('textInput');
 const para = document.getElementById('samplePara');

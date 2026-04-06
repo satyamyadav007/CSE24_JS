@@ -1,4 +1,3 @@
-// Array to store employee objects
 let employees = [];
 
 function addEmployee() {
@@ -28,7 +27,8 @@ function displayEmployees() {
     const display = document.getElementById('resultDisplay');
     display.innerHTML = "<h3>All Employees</h3>";
     for (let emp of employees) { 
-        display.innerHTML += `<div class="record">Name: ${emp.name} | ID: ${emp.id} | Salary: ₹${emp.salary} | Dept: ${emp.dept}</div>`;
+        display.innerHTML += `<div class="record">Name: ${emp.name} |
+         ID: ${emp.id} | Salary: ₹${emp.salary} | Dept: ${emp.dept}</div>`;
     }
 }
 
@@ -43,7 +43,8 @@ function filterHighSalary() {
 
 function calculateTotalPayout() {
     const total = employees.reduce((sum, emp) => sum + emp.salary, 0);
-    document.getElementById('resultDisplay').innerHTML = `<h3>Total Salary Payout: ₹${total.toFixed(2)}</h3>`;
+    document.getElementById('resultDisplay').innerHTML = `<h3>Total Salary Payout:
+     ₹${total.toFixed(2)}</h3>`;
 }
 
 function calculateAverage() {
